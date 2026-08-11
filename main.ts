@@ -1,12 +1,10 @@
 // Print the greeting below.
 const n: number = Number(require("fs").readFileSync(0, "utf-8").trim());
-
-if (n % 15 === 0) {
-  console.log("FizzBuzz");
-} else if (n % 3 === 0) {
-  console.log("Fizz");
-} else if (n % 5 === 0) {
-  console.log("Buzz");
-} else {
-  console.log(n);
+let sum: number = 0;
+function sumFn(n: number): void {
+  for (let i = 1; i <= n; i++) {
+    sum += i;
+  }
 }
+sumFn(n);
+console.log(sum);
