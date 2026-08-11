@@ -5,4 +5,5 @@ const lines: string[] = require("fs")
   .split("\n");
 const a = Number(lines[0]);
 const b = Number(lines[1]);
-console.log(a + b);
+const c = Number(lines[2]);
+console.log(Math.floor((a + b + c) / 3));
