@@ -1,4 +1,3 @@
-// Print the greeting below.
 function last<T>(arr: T[]): T | undefined {
   // Return the last element, or undefined.
   return arr[arr.length - 1];
